@@ -18,7 +18,6 @@ class shopping:
             print(f"{key} - {value[0]:15}{value[1]:10.2f} €")
         print("---------- END -----------")
 
-    # Bug
     def fill_cart(**kwargs):
         print()
         print("--Fill cart with available items--")
@@ -27,18 +26,15 @@ class shopping:
         complete = "c"
         while active_shop:
             order = input("Enter article you want to add (q to quit/c to complete): ")
-            if int(order) in article.keys():
-                shopping_cart.append(order)
-            elif order not in article.keys():
-                print("Invalid value!")
-            elif order == exit.lower():
+            if order == exit.lower():
+                print("See you next time.")
                 shopping_cart.clear()
                 active_shop = False
             elif order == complete.lower():
+                print("Thank you for choosing us!")
                 active_shop = False
-
-        print(shopping_cart)
-
+            elif int(order) in article.keys():
+                shopping_cart.append(int(order))
 
 
 shopping.available()
