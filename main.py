@@ -8,20 +8,27 @@ shopping_cart = []
 class shopping:
 
     def __init__(self):
+        self.article = article
         self.shopping_cart = cart
         self.fill_cart = fill
 
-    def cart():
-        shopping_cart = []
-        while order_number >= 0:
-            shopping_cart = []
-            print(shopping_cart)
-            break
+    def articles():
+        print("------- Available -------")
+        for key, value in article.items():
+            print(f"{key} - {value[0]:15}{value[1]:10.2f} €")
+        print("------END------")
 
-    def fill_cart(*args):
-        shopping_cart.append(args)
-        print(shopping_cart)
+    # def fill_cart(**kwargs):
+    #     print()
+    #     print("--Fill cart with available items--")
+    #     active_shop = True
+    #     while active_shop:
+    #         current_cart = input("Enter article you wish to buy (q to quit/c to cancel): ")
+    #         if current_cart:
+    #             shopping_cart.append(current_cart)
+    #         elif current_cart.lower() == "q":
+    #             active_shop = False
 
 
-shopping.cart()
-shopping.fill_cart(article[1], article[1], article[2], article[3], article[5], article[4])
+shopping.articles()
+# shopping.fill_cart()
