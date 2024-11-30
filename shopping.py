@@ -4,11 +4,11 @@ prices = {1: '100', 2: '1000', 3: '800', 4: '300', 5: '2'}
 order_number = 1
 shopping_cart = ['1']
 
-class shopping:
+class Shopping:
 
-    def __init__(self, available, fill_cart):
+    def __init__(self, available, fill):
         self.available = available
-        self.fill_cart = fill_cart
+        self.fill = fill
 
     # Funktion listet die verfügbaren Artikel auf
     def available():
@@ -18,8 +18,8 @@ class shopping:
         print("---------- END -----------")
 
 
-    # Funktion füllt Einkaufswagen nach User Input der value keys
-    def fill_cart():
+    # Funktion füllt Einkaufswagen nach User Input
+    def fill():
         print()
         print("--Fill cart with available items--")
         active_shop = True
@@ -48,8 +48,8 @@ class shopping:
                 print("Invalid input.")
 
 def main():
-    shopping.available()
-    shopping.fill_cart()
+    Shopping.available()
+    Shopping.fill()
 
 if __name__ == '__main__':
     main()
