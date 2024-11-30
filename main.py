@@ -1,5 +1,3 @@
-from astropy.cosmology import available
-
 articles = {"1": ['schuhe', 100], "2": ['iphone', 1000], "3": ['ipad', 800], "4": ['airpods', 300], "5": ['kugelschreiber', 2]}
 prices = {1: '100', 2: '1000', 3: '800', 4: '300', 5: '2'}
 
@@ -40,7 +38,7 @@ class shopping:
             elif order == complete:
                 print("Thank you for choosing us!")
                 for order in shopping_cart:
-                    pass    # print values der bestellung ? neues dict??
+                    pass
                 print(f"Your order: {current_order}", end=",")
                 active_shop = False
             elif order == exit:
