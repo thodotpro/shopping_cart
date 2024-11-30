@@ -27,7 +27,7 @@ class shopping:
         exit = "q"
         complete = "c"
         while active_shop:
-            order = input("Enter article no. you want to add (q to quit - c to cancel): ")
+            order = input("Enter article no. you want to add (q to quit - c to complete): ")
             if order == exit.lower():
                 print("See you next time.")
                 shopping_cart.clear()

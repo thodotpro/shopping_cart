@@ -1,3 +1,6 @@
 - 1 dictionary für preise
 - 1 dictionary für artikel
 - ich bekomm die value errors nicht weg vl kann man das damit lösen, wär für die summe und andere berechnungen vl auch leichter?
+- der key für den artikel und den jeweiligen preis wär dann trotzdem derselbe idk
+
+- die namen der funktionen und variablen können wir auch irgendwann definieren, kommt mir irgendwie blöd vor
