@@ -6,8 +6,7 @@ shopping_cart = ['1']
 
 class shopping:
 
-    def __init__(self):
-        self.article = articles
+    def __init__(self, available, fill_cart):
         self.available = available
         self.fill_cart = fill_cart
 
@@ -48,8 +47,9 @@ class shopping:
             else:
                 print("Invalid input.")
 
+def main():
+    shopping.available()
+    shopping.fill_cart()
 
-
-
-shopping.available()
-shopping.fill_cart()
+if __name__ == '__main__':
+    main()
