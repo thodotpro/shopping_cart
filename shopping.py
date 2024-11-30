@@ -2,7 +2,7 @@ articles = {"1": ['schuhe', 100], "2": ['iphone', 1000], "3": ['ipad', 800], "4"
 prices = {1: '100', 2: '1000', 3: '800', 4: '300', 5: '2'}
 
 order_number = 1
-shopping_cart = ['1']
+shopping_cart = []
 
 class Shopping:
 
